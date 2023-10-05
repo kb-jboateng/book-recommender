@@ -1,0 +1,17 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# local env files
+.env*.local
+
+# py cahe
+.py_test_cache
+__pycache__
+
+# vs code settings
+.vscode
+
+# ds store
+.DS_Store
+
+# env
+*venv
