@@ -3,7 +3,7 @@ import pandas as pd
 from scipy.sparse import coo_matrix
 from sklearn.metrics.pairwise import cosine_similarity
 
-from database import engine
+from .database import engine
 
 def recommend_books(user_id: str):
     try:

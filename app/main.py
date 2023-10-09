@@ -1,8 +1,8 @@
 from fastapi import Depends, FastAPI
-from database import get_session
-from models import BookBase
-from recommender import recommend_books
-from services import *
+from .database import get_session
+from .models import BookBase
+from .recommender import recommend_books
+from .services import *
 from sqlalchemy.orm import Session
 
 app = FastAPI()
