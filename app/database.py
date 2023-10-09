@@ -1,9 +1,7 @@
 from sqlmodel import create_engine, SQLModel, Session
-from config import settings
+from config import DATABASE_URL
 
-__DB_URL = settings.DATABASE_URL
-
-engine = create_engine(__DB_URL, echo=True)
+engine = create_engine(DATABASE_URL, echo=True)
 
 def init_db():
     SQLModel.metadata.create_all(engine)
